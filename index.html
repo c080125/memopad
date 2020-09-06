@@ -15,22 +15,28 @@
     <main>
         <h1>My Memo</h1>
         <div>
-            <!-- 呼び出し番号 -->
+            <input type="text" id="tag">
         </div>
         <div>
-            <!-- メモ入力欄 -->
+            <textarea name="" id="tweat" cols="30" rows="10"></textarea><!-- メモ入力欄 -->
         </div>
-        <button>Save New</button><!-- 入力したのを記録するボタン -->
-        <button>Update</button><!-- 入力したのを既存のものと置き換える（上書き） -->
+        <button id="save">Save New</button><!-- 入力したのを記録するボタン -->
+        <button id="edit">Update</button><!-- 入力したのを既存のものと置き換える（上書き） -->
         <div>
-            <!--  -->
+            <!-- テーブルで表示させる -->
         </div>
     </main>
     <footer>
         <p>copyrights 2020 ひまえだ All RIghts Reserved.</p>
     </footer>
     <script>
-
+        $("#save").on("click", function(){
+            const tag = $("#tag").val();
+            const tweat = $("#tweat").val();
+            const time = 
+            // 現在時刻を取得したい（年月日、時刻（秒単位まで））
+            localStorage.setItem(time, tag, tweat);
+        })
     </script>
 </body>
 
